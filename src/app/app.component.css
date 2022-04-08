@@ -1,0 +1,29 @@
+/* .background{
+  background-image: url(../assets/h-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  width: 1000px;
+} */
+
+.circle{
+  background-color: #d58c7499;
+  border: 1px solid white;
+  border-radius: 100%;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 250px;
+  position: relative;
+}
+
+.speech-marks {
+  font-weight: bold;
+  font-size: 20px;
+}
