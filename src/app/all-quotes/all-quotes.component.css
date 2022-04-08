@@ -1,0 +1,27 @@
+.quotes-section {
+  height: 90vh;
+  background-color: white;
+  width: 100%;
+}
+
+.section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.horizontal {
+  width: 15px;
+  margin: 15px;
+  height: 2px;
+  border: none;
+  background: #599EB2;
+}
+
+h3 {
+  color: #599EB2;
+  font-family: 'Charm', cursive;
+  font-size: 25px;
+  letter-spacing: 1.0px;
+}
