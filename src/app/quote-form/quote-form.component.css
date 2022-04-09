@@ -1,0 +1,43 @@
+.form-section {
+  height: 100vh;
+  background-color: #599fb245;
+  width: 100%;
+}
+
+.section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.horizontal {
+  width: 15px;
+  margin: 15px;
+  height: 3px;
+  border: none;
+  background: #599EB2;
+}
+
+h3 {
+  color: #599EB2;
+  font-family: 'Charm', cursive;
+  font-size: 25px;
+  letter-spacing: 1.0px;
+  font-weight: bold;
+}
+
+.right-col {
+  background-color: white;
+  height: 750px;
+  margin-top: 30px;
+  border: 1px solid black;
+}
+
+.left-col {
+  background-color: white;
+  height: 750px;
+  margin-top: 30px;
+  border: 1px solid black;
+  border-left: none;
+}
