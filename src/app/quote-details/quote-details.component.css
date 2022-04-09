@@ -1,0 +1,29 @@
+.black-horizontal {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background: black;
+}
+
+.action-btns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: -40px;
+}
+
+.action-btns img {
+  width: 100px;
+  height: 100px;
+  margin-right: 5px;
+}
+
+.upvotes-num {
+  margin-top: -40px;
+  margin-left: 35px;
+}
+
+.downvotes-num {
+  margin-top: -40px;
+  margin-left: -55px;
+}
