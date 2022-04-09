@@ -18,7 +18,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: -40px;
+  margin-top: -10px;
 }
 
 .action-btns img {
@@ -27,12 +27,30 @@
   margin-right: 5px;
 }
 
+.upvote {
+  margin-left: -30px;
+}
+
 .upvotes-num {
-  margin-top: -40px;
-  margin-left: 35px;
+  margin-top: -30px;
+  margin-left: 10px;
+}
+
+.downvote {
+  margin-left: -5px;
 }
 
 .downvotes-num {
-  margin-top: -40px;
+  margin-top: -30px;
   margin-left: -55px;
+}
+
+.del-btn {
+  background-color: red;
+  border: none;
+  margin-left: 25px;
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
 }
