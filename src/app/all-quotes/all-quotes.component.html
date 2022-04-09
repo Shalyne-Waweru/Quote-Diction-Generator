@@ -9,7 +9,7 @@
     <div class="container">
       <div class="row">
         <!-- First Quote -->
-        <div class="col-md-3" *ngFor = 'let quote of quotes'>
+        <div class="col-md-3" *ngFor = 'let quote of quotes; let i = index'>
           <img src="assets/quote.png" alt="Quote Icon">
           
           <div class="quote-area">
@@ -19,8 +19,10 @@
           <hr class="quote-separator">
           <p>{{quote.author}}</p>
 
-          <!-- Quote Details --> 
-          <button class="more-btn">VIEW MORE</button>   
+          <!-- Quote Details -->
+          
+          <!-- Add a click event that will execute the showQuoteDetails() function -->
+          <button (click) = 'showQuoteDetails(i)' class="more-btn">VIEW MORE</button>   
         </div>
       </div>
   </div>

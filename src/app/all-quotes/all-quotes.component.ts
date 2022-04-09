@@ -16,6 +16,10 @@ export class AllQuotesComponent implements OnInit {
     new Quote(4, 'Tyler', 'What lies behind you and what lies in front of you, pales in comparison to what lies inside of you.','Ralph Waldo Emerson',new Date(2019,0,18)),
   ];
 
+  showQuoteDetails(index:number){
+
+  }
+
   constructor() { }
 
   ngOnInit(): void {
