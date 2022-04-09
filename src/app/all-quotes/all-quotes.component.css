@@ -54,6 +54,14 @@ h3 {
   margin-left: 20px;
 }
 
+.quote-area p {
+  padding: 100px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Charm', cursive;
+  letter-spacing: 1.0px;
+}
+
 .quote-separator {
   width: 80px;
   height: 5px;
