@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .horizontal {
@@ -25,3 +25,52 @@ h3 {
   font-size: 25px;
   letter-spacing: 1.0px;
 }
+
+.col-md-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+  margin-left: 30px;
+  text-align: center;
+  padding: 0px;
+  margin-top: 30px;
+}
+
+.col-md-4 img {
+  height: 30px;
+  width: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.quote-area {
+  background-image: url(../.././assets/blue-brush-stroke.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  margin-left: 20px;
+}
+
+.quote-separator {
+  width: 80px;
+  height: 5px;
+  border: none;
+  color: blue;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.more-btn {
+  height: 50px;
+  width: 100%;
+  color: white;
+  background-color: #599EB2;
+  border: none;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
