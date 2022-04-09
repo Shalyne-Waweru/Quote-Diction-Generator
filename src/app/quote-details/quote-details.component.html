@@ -15,8 +15,8 @@
     </div>
     
     <div>
-      <img class="downvote" src="assets/downvote.png" alt="Downvote Icon">
-      <p class="downvotes-num">##</p>
+      <img (click) = 'downvote()' class="downvote" src="assets/downvote.png" alt="Downvote Icon">
+      <p class="downvotes-num">{{details.downvotes}}</p>
     </div>
 
     <button class="del-btn">DELETE</button>
