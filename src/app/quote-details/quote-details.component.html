@@ -1,10 +1,11 @@
 <div class="quote-details">
-  <div class="post-details">
-    <p>Posted by: <span>{{details.firstName}}</span></p>
-    <p>Date: <span>Date here</span>, <span>##</span> days ago.</p>
-  </div>
-
   <hr class="black-horizontal">
+
+  <div class="post-details">
+    <p>Posted by: <span class="bold">{{details.firstName}}</span></p>
+    <p>Date: <br><span class="bold">{{details.postedDate|date|uppercase}}</span></p>
+    <p>This was <span>##</span> days ago.</p>
+  </div>
 
   <div class="action-btns">
     <div>
