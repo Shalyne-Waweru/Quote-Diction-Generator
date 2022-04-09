@@ -16,8 +16,9 @@ export class AllQuotesComponent implements OnInit {
     new Quote(4, 'Tyler', 'What lies behind you and what lies in front of you, pales in comparison to what lies inside of you.','Ralph Waldo Emerson',new Date(2019,0,18)),
   ];
 
+  //Toggle between hiding and showing the quote details on clicking the view more button
   showQuoteDetails(index:number){
-
+    this.quotes[index].showQuoteDetails = !this.quotes[index].showQuoteDetails;
   }
 
   constructor() { }
