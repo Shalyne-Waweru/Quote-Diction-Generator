@@ -11,6 +11,10 @@ export class QuoteDetailsComponent implements OnInit {
   //Defining details as the property that will undergo input property binding, which is of the type Quote
   @Input() details: Quote;
 
+  upvote(){
+    this.details.upvotes+=1;
+  }
+
   constructor() { }
 
   ngOnInit(): void {

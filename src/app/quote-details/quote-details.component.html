@@ -9,8 +9,9 @@
 
   <div class="action-btns">
     <div>
-      <img class="upvote" src="assets/upvote.png" alt="Upvote Icon">
-      <p class="upvotes-num">##</p>
+      <!-- Add a click event that executes the upvote() function -->
+      <img (click) = 'upvote()' class="upvote" src="assets/upvote.png" alt="Upvote Icon">
+      <p class="upvotes-num">{{details.upvotes}}</p>
     </div>
     
     <div>
