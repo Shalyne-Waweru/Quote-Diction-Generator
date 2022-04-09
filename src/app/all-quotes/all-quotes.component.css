@@ -27,10 +27,15 @@ h3 {
   font-weight: bold;
 }
 
-.col-md-4 {
+.row {
+  margin-left: 100px;
+}
+
+.col-md-3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   border: 1px solid black;
   margin-left: 30px;
   text-align: center;
@@ -38,7 +43,7 @@ h3 {
   margin-top: 30px;
 }
 
-.col-md-4 img {
+.col-md-3 img {
   height: 30px;
   width: 30px;
   margin-left: auto;
@@ -56,7 +61,7 @@ h3 {
 }
 
 .quote-area p {
-  padding: 100px 30px;
+  padding: 50px 30px;
   font-size: 20px;
   font-weight: bold;
   font-family: 'Charm', cursive;
@@ -70,6 +75,7 @@ h3 {
   color: blue;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -50px;
 }
 
 .more-btn {
