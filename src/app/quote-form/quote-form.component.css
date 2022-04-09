@@ -34,10 +34,42 @@ h3 {
   border: 1px solid black;
 }
 
+.right-col img {
+  margin-top: 150px;
+  margin-left: 15px;
+  opacity: 0.8;
+}
+
 .left-col {
   background-color: white;
   height: 750px;
   margin-top: 30px;
   border: 1px solid black;
   border-left: none;
+}
+
+.form-info {
+  margin-top: 150px;
+  margin-left: 80px;
+}
+
+.form-info p {
+  font-size: 25px;
+  font-weight: 450;
+}
+
+.form-info hr {
+  width: 280px;
+  margin-top: -15px;
+  height: 1px;
+  border: none;
+  background-color: black;
+}
+
+form {
+  margin-top: 30px;
+}
+
+input {
+  margin-top: 10px;
 }
