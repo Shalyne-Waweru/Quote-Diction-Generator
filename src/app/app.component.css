@@ -25,19 +25,21 @@
 }
 
 .title {
-  font-family: 'Charm', cursive;
   font-size: 25px;
+  font-weight: bolder;
+  margin-bottom: 30px;
 }
 
 .intro {
   color: white;
   font-size: 20px;
   line-height: 1.6;
+  font-family: 'Charm', cursive;
 }
 
 .speech-marks {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .horizontal {
@@ -45,5 +47,7 @@
   height: 5px;
   border: none;
   background: white;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
