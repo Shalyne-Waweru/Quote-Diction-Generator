@@ -12,7 +12,11 @@
         <div class="col-md-3" *ngFor = 'let quote of quotes; let i = index'>
           <img src="assets/quote.png" alt="Quote Icon">
           
-          <div class="quote-area">
+          <div class="quote-area" appHighlight *ngIf="mostUpvotes()===quote.upvotes && quote.upvotes>0">
+            <p>{{quote.quote}}</p>
+          </div>
+
+          <div class="quote-area" *ngIf="mostUpvotes()!==quote.upvotes || quote.upvotes===0">
             <p>{{quote.quote}}</p>
           </div>
 
@@ -24,7 +28,7 @@
           <app-quote-details *ngIf = 'quote.showQuoteDetails' [details] = 'quote' (isDelete) = 'quoteDelete($event, i)'></app-quote-details>
 
           <!-- Add a click event that will execute the showQuoteDetails() function -->
-          <button (click) = 'showQuoteDetails(i)' class="more-btn">VIEW MORE</button>   
+          <button (click) = 'showQuoteDetails(i)' type="submit" class="more-btn">VIEW MORE</button>   
         </div>
       </div>
     </div>
