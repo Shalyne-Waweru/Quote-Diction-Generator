@@ -15,10 +15,12 @@
     </div>
     
     <div>
+      <!-- Add a click event that executes the downvote() function -->
       <img (click) = 'downvote()' class="downvote" src="assets/downvote.png" alt="Downvote Icon">
       <p class="downvotes-num">{{details.downvotes}}</p>
     </div>
 
-    <button class="del-btn">DELETE</button>
+    <!-- Add a click event that executes the deleteQuote() function -->
+    <button (click) = 'deleteQuote(true)' class="del-btn">DELETE</button>
   </div>
 </div> 

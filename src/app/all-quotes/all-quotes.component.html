@@ -20,7 +20,8 @@
           <p>{{quote.author}}</p>
 
           <!-- Quote Details -->
-          <app-quote-details *ngIf = 'quote.showQuoteDetails' [details] = 'quote'></app-quote-details>
+          <!-- Catch the event being emitted (isDelete) in the parent component and define a function that will be triggered once this event is captured. -->
+          <app-quote-details *ngIf = 'quote.showQuoteDetails' [details] = 'quote' (isDelete) = 'quoteDelete($event, i)'></app-quote-details>
 
           <!-- Add a click event that will execute the showQuoteDetails() function -->
           <button (click) = 'showQuoteDetails(i)' class="more-btn">VIEW MORE</button>   

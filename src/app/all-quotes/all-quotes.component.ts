@@ -21,6 +21,16 @@ export class AllQuotesComponent implements OnInit {
     this.quotes[index].showQuoteDetails = !this.quotes[index].showQuoteDetails;
   }
 
+  quoteDelete(isDelete:boolean, index:number){
+    if (isDelete) {
+      let toDelete = confirm(`Are you sure you want to delete this quote?`);
+
+      if(toDelete){
+        this.quotes.splice(index,1);
+      }
+    }
+  }
+
   constructor() { }
 
   ngOnInit(): void {
