@@ -4,7 +4,7 @@
   <div class="post-details">
     <p>Posted by: <span class="bold">{{details.firstName}}</span></p>
     <p>Date: <br><span class="bold">{{details.postedDate|date|uppercase}}</span></p>
-    <p>This was <span>##</span> days ago.</p>
+    <p>This was <span>{{details.postedDate|dateCount}}</span> days ago.</p>
   </div>
 
   <div class="action-btns">
