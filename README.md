@@ -1,7 +1,21 @@
 # Quote Diction Generator
 ![](src/assets/quote-website-screenshot.png)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
+## Project Description
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2. It's an application that enables users to create quotes and have those quotes voted on whether they are terrible or are inspirational. It also implements a directive that highlights the quote with the highest number of upvotes. 
+
+## Author
+- [Shalyne Waweru](https://github.com/Shalyne-Waweru)
+- Email: shalynewaweru@gmail.com
+
+## Figma Design Link
+- [Get a sneak peak](https://www.figma.com/file/LchAU9yAddU6InWUT2hhMk/Quote-Generator?node-id=0%3A1)
+
+## Technologies Used
+- HTML
+- CSS
+- Typescript
+- Javascript
 
 ## Development server
 
@@ -26,3 +40,26 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## License info
+MIT License
+
+Copyright (c) 2022 Shalyne Waweru
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
