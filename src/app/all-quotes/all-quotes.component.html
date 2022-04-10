@@ -27,5 +27,7 @@
           <button (click) = 'showQuoteDetails(i)' class="more-btn">VIEW MORE</button>   
         </div>
       </div>
+    </div>
   </div>
 </div>
+<app-quote-form (addQuote) = 'addedQuote($event)'></app-quote-form>

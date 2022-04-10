@@ -17,7 +17,7 @@
 
           <!-- Add a template reference variable 'quoteForm' to the form tag and equate it to ngForm. -->
           <!-- This provides the form element with additional features and monitors the changes and validity of input elements. -->
-          <form #quoteForm = 'ngForm'>
+          <form (ngSubmit) = 'addNewQuote() ;quoteForm.resetForm({})' #quoteForm = 'ngForm'>
             <div>
               <label for="fname">First Name</label><br>
               <!-- Add the [(ngModel)] attribute to our 'fname' input and equat it to the 'firstName' attribute of the 'newQuote' object -->
@@ -51,7 +51,7 @@
               </div>
             </div>
   
-            <button class="add-btn">ADD QUOTE</button>
+            <button type="submit" class="add-btn">ADD QUOTE</button>
           </form>
         </div>
       </div>
