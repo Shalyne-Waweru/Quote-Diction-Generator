@@ -15,15 +15,41 @@
           <p>Share Some Wise Words</p>
           <hr>
 
-          <form>
-            <label for="fname">First Name</label><br>
-            <input type="text" id="fname" required><br>
+          <!-- Add a template reference variable 'quoteForm' to the form tag and equate it to ngForm. -->
+          <!-- This provides the form element with additional features and monitors the changes and validity of input elements. -->
+          <form #quoteForm = 'ngForm'>
+            <div>
+              <label for="fname">First Name</label><br>
+              <!-- Add the [(ngModel)] attribute to our 'fname' input and equat it to the 'firstName' attribute of the 'newQuote' object -->
+              <!-- Define a 'name' attribute which is a requirement when using [(ngModel)] and a form. -->
+              <!-- Add a template reference variable #name to access Angular's form control on this input  -->
+              <input type="text" id="fName" [(ngModel)]="newQuote.firstName" name="firstName" #fName='ngModel' required><br>
+
+              <!-- Create a div that has an attribute [hidden] which makes sure the alert is shown only when the name input is invalid. 
+              The pristine property allows us to hide the alert when we load a blank page. -->
+              <div [hidden]="fName.valid || fName.pristine" class="alert alert-danger">
+                <p>First Name is required!</p>
+              </div>
+
+            </div>
   
-            <label for="quote">Quote</label><br>
-            <textarea id="quote" rows="3" required></textarea><br>
+            <div>
+              <label for="quote">Quote</label><br>
+              <textarea id="quote" rows="3" [(ngModel)]="newQuote.quote" name="quote" #quote='ngModel' required></textarea><br>
+
+              <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+                <p>Quote is required!</p>
+              </div>
+            </div>
   
-            <label for="author">Author</label><br>
-            <input type="text" id="author" required><br>
+            <div>
+              <label for="author">Author</label><br>
+              <input type="text" id="author" [(ngModel)]="newQuote.author" name="author" #author='ngModel' required><br>
+
+              <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+                <p>Author is required!</p>
+              </div>
+            </div>
   
             <button class="add-btn">ADD QUOTE</button>
           </form>
