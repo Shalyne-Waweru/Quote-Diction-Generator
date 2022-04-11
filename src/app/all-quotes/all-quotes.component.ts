@@ -40,19 +40,24 @@ export class AllQuotesComponent implements OnInit {
     this.quotes.push(quote);
   }
 
-  preNum:number
-  lastNum:number
+  initialUpvote:number
+  newUpvote:number
   counter:number
 
   mostUpvotes(){
-    this.preNum = 0
-    this.lastNum = 0
+    this.initialUpvote = 0;
+    this.newUpvote = 0;
 
-    for(this.counter=0 ; this.counter < this.quotes.length; this.counter++) {
-      this.lastNum = this.quotes[this.counter].upvotes;
-      if(this.lastNum > this.preNum){this.preNum = this.lastNum}
+    for(this.counter = 0; this.counter < this.quotes.length; this.counter++) {
+      //Getting the 'newUpvote' number
+      this.newUpvote = this.quotes[this.counter].upvotes;
+
+      //Setting the 'initialUpvote' to the 'newUpvote' if the 'newUpvote' is greater than the 'initialUpvote'
+      if(this.newUpvote > this.initialUpvote){
+        this.initialUpvote = this.newUpvote;
+      }
     }
-    return  this.preNum
+    return  this.initialUpvote;
   }
 
   constructor() { }
