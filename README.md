@@ -11,6 +11,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Figma Design Link
 - [Get a sneak peak](https://www.figma.com/file/LchAU9yAddU6InWUT2hhMk/Quote-Generator?node-id=0%3A1)
 
+## Website Link
+- [Check it out here](https://shalyne-waweru.github.io/Quote-Diction-Generator/)
+
 ## Technologies Used
 - HTML
 - CSS
